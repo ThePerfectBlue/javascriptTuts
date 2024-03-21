@@ -1,0 +1,30 @@
+=> Global Execution Context
+
+.) global execution allocated to: this
+.) memory phase: all variables collected and assigned 'undefined'
+.) execution phase: variables assigned values
+
+=> Function Execution Context
+
+=> Eval execution context (mongodb)
+
+two phases ->  1- memory creation phase
+               2- execution phase
+
+
+***********  CODE  **************
+
+function one(){
+    console.log("one");
+    two();
+}
+function two(){
+    console.log("two");
+    three();
+}
+function three(){
+    console.log("three");
+};
+one()
+two()
+three()
