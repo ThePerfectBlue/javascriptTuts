@@ -7,4 +7,4 @@ const newNums = myNumers
                 .map( (num) => num + 1)
                 .filter( (num) => num >= 40)
 
-console.log(newNums);
+console.log(newNums);   // multiple maps and filters acan be concatenated
