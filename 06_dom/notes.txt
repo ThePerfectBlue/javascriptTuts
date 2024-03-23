@@ -5,3 +5,4 @@ window.document.location
 window.document.cookie
 innerHTML
 
+nodeList par forEach() use karein
