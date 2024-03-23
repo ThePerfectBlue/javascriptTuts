@@ -1,0 +1,7 @@
+window.document
+window.document.links
+window.document.baseURI / window.document.href
+window.document.location
+window.document.cookie
+innerHTML
+
