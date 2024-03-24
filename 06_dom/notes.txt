@@ -5,4 +5,6 @@ window.document.location
 window.document.cookie
 innerHTML
 
-nodeList par forEach() use karein
+nodeList par index [0] use karein
+htmlCollection par forEach() use karein
+
