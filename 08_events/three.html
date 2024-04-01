@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>hide and seek</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script>
+        let intervalId; // Variable to store the interval ID
+        
+        // Function to start the timer
+        const startTime = () => {
+            // Check if the interval is already running
+            if (!intervalId) {
+                // Start the interval
+                intervalId = setInterval(() => {
+                    // Get the current timestamp and log it
+                    console.log(new Date().toLocaleTimeString());
+                }, 1000); // Run every second
+            }
+        }
+        
+        // Function to stop the timer
+        const stopTime = () => {
+            // Check if the interval is running
+            if (intervalId) {
+                // Stop the interval
+                clearInterval(intervalId);
+                intervalId = null; // Reset the interval ID
+            }
+        }
+        
+        // Attach event listeners to the buttons
+        document.getElementById('start').addEventListener('click', startTime);
+        document.getElementById('stop').addEventListener('click', stopTime);
+    </script>
+</body>
+</html>

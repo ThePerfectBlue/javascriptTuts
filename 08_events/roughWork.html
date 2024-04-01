@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <style>
+        li{
+            border: 2px solid green;
+            font-weight: 600;
+            font-size: large;
+            display: flex;
+            justify-content: center; /* Horizontally center the items */
+            align-items: center; /* Vertically center the items */
+           margin: 20px;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+        ul{
+            padding: 0px;
+         
+        }
+        .harry{
+            background-color    : greenyellow;
+        }
+    </style>
+</head>
+<body style="padding: 0px; margin: 50px;">
+    <div>
+    <h1 class="hogwarts">Hogwarts</h1>
+    <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta cumque tempore minus ex numquam soluta voluptates vel natus <span class="harry"> harry potter </span>consectetur veritatis, quos accusantium velit nihil impedit libero exercitationem sint! Minima, minus!</p>
+    <ul type="none" style="color: blueviolet;">
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+    </ul>
+    <button style="width: 100px; font-size: 30px" type="submit" value="Submit">Click</button>
+</div>
+</body>
+<script>
+    let button = document.getElementsByTagName("button");
+    button.addEventListener("click", ()=> console.log("double clicked!!"))
+</script>
+</html>

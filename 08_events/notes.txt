@@ -1,0 +1,8 @@
+clearInterval will take the refernce of setInterval
+
+
+const intervalId = setInterval(
+    // body
+)
+
+clearInterval(intervalId)
